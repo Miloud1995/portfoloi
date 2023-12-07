@@ -10,5 +10,9 @@
 @layer base{
   html{
     font-family: 'Raleway', sans-serif;
+    background: url(assets/bgh.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }

@@ -7,7 +7,7 @@ import image5 from '../assets/portfolio/p5.jpg'
 
 const Portfolio = () => {
   return (
-      <div name='portfolio' className=' bg-gradient-to-b from-slate-800 to-slate-200 text-white md:h-screen '>
+      <div name='portfolio' className='  text-white md:h-screen '>
           <div className='max-w-screen-lg w-full h-full p-4 mx-auto flex flex-col justify-center '>
               <div className='pb-8'>
                   <h1 className='text-4xl font-bold inline border-b-4 border-gray-300 lg:ml-96'>Portfolio</h1>

@@ -6,7 +6,7 @@ const NavBar = () => {
     const [nav, Setnav] = useState(false);
   return (
       <div className='flex justify-between items-center w-full h-20 text-white fixed bg-transparent px-4'>
-          <h1 className='text-5xl font-signature ml-2'>Welcome</h1>
+          <h1 className='text-5xl font-signature ml-2'>Miloud</h1>
           <ul className='hidden md:flex justify-between'>
         <li className='px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200'><Link to="home" smooth duration={500}>home</Link></li>
               <li className='px-4 cursor-pointer capitalize font-medium text-white hover:scale-105 duration-200'><Link to="about" smooth duration={500}>about</Link></li>

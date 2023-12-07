@@ -9,7 +9,7 @@ import tailwind from '../assets/TailwindCSS.jpg'
 
 const Experience = () => {
   return (
-    <div name="experience" className=' bg-gradient-to-b from-slate-200 to-slate-900 w-full h-screen '>
+    <div name="experience" className='  w-full h-screen '>
       <div className='flex flex-col justify-center w-full h-full mx-auto p-4 max-w-screen-lg text-white'>
         <div className=' '>
           <h1 className='text-4xl font-bold inline border-b-4 border-gray-300 lg:ml-96'>Experience</h1>

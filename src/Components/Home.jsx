@@ -8,7 +8,7 @@ import { TypeAnimation } from 'react-type-animation';
 
 const Home = () => {
   return (
-      <div name="home" className='flex h-screen w-full bg-gradient-to-b from-slate-900 to-slate-400 text-white pb-60'>
+      <div name="home" className='flex h-screen w-full text-white pb-60'>
           <div className='flex flex-col justify-between items-center max-w-screen-lg mx-auto  md:flex-row md:mt-20'>
               <div className='  h-full mt-40'>
           <h1><span className='text-4xl sm:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r
