@@ -6,6 +6,22 @@ import react from '../assets/react2.jpg'
 import sql from '../assets/mssql.webp'
 import bootstrap from '../assets/bootstrap.jpg'
 import tailwind from '../assets/TailwindCSS.jpg'
+import { motion } from "framer-motion"
+
+const variants = {
+  initialed: {
+    scale: 0.9,
+    opacity:0
+  },
+  animated: {
+    scale: 1,
+    opacity: 1,
+    transition: {
+      duration: 2,
+      straggerChildren:2
+    }
+  }
+}
 
 const Experience = () => {
   return (
@@ -16,8 +32,8 @@ const Experience = () => {
           <p className='py-6  lg:ml-80'>These are the technologies I have worked with</p>
         </div>
 
-        <div className=' w-full grid grid-cols-2 sm:grid-cols-3  gap-8 text-center py-8 px-12 sm:px-0'>
-          <div className=' shadow-md shadow-orange-700 rounded-lg hover:scale-105 duration-200 py-2'>
+        <motion.div variants={variants} initial="initialed" whileInView="animated" className=' w-full grid grid-cols-2 sm:grid-cols-3  gap-8 text-center py-8 px-12 sm:px-0'>
+          <motion.div variants={variants} className=' shadow-md shadow-orange-700 rounded-lg hover:scale-105 duration-200 py-2'>
             <div className='rounded-lg' style={{
              background: `url(${html})`,
              backgroundSize: 'cover', 
@@ -26,9 +42,9 @@ const Experience = () => {
              height: '200px',
            }}></div>
             <p className='p-2 text-center text-white font-bold '>HTML</p>
-          </div>
+          </motion.div>
 
-          <div className=' shadow-md shadow-blue-500 rounded-lg hover:scale-105 duration-200 py-2'>
+          <motion.div variants={variants} className=' shadow-md shadow-blue-500 rounded-lg hover:scale-105 duration-200 py-2'>
             <div className='rounded-lg' style={{
              background: `url(${css})`,
              backgroundSize: 'cover', 
@@ -37,10 +53,10 @@ const Experience = () => {
              height: '200px',
            }}></div>
             <p className='p-2 text-center text-white font-bold '>CSS</p>
-          </div>
+          </motion.div>
 
           
-          <div className=' shadow-md shadow-violet-600 rounded-lg hover:scale-105 duration-200 py-2'>
+          <motion.div variants={variants} className=' shadow-md shadow-violet-600 rounded-lg hover:scale-105 duration-200 py-2'>
             <div className='rounded-lg' style={{
              background: `url(${bootstrap})`,
              backgroundSize: 'cover', 
@@ -49,9 +65,9 @@ const Experience = () => {
              height: '200px',
            }}></div>
             <p className='p-2 text-center text-white font-bold '>BOOTSTRAP</p>
-          </div>
+          </motion.div>
 
-          <div  className=' shadow-md shadow-sky-400 rounded-lg hover:scale-105 duration-200 py-2'>
+          <motion.div variants={variants}  className=' shadow-md shadow-sky-400 rounded-lg hover:scale-105 duration-200 py-2'>
             <div className='rounded-lg' style={{
              background: `url(${react})`,
              backgroundSize: 'cover', 
@@ -60,9 +76,9 @@ const Experience = () => {
              height: '200px',
            }}></div>
             <p className='p-2 text-center text-white font-bold '>REACT</p>
-          </div>
+          </motion.div>
 
-          <div className=' shadow-md shadow-yellow-500 rounded-lg hover:scale-105 duration-200 py-2'>
+          <motion.div variants={variants} className=' shadow-md shadow-yellow-500 rounded-lg hover:scale-105 duration-200 py-2'>
             <div className='rounded-lg' style={{
              background: `url(${js})`,
              backgroundSize: 'cover', 
@@ -71,9 +87,9 @@ const Experience = () => {
              height: '200px',
            }}></div>
             <p className='p-2 text-center text-white font-bold '>JAVASCRIPT</p>
-          </div>
+          </motion.div>
 
-          <div className=' shadow-md shadow-blue-300 rounded-lg hover:scale-105 duration-200 py-2'>
+          <motion.div variants={variants} className=' shadow-md shadow-blue-300 rounded-lg hover:scale-105 duration-200 py-2'>
             <div className='rounded-lg' style={{
              background: `url(${tailwind})`,
              backgroundSize: 'cover', 
@@ -82,11 +98,11 @@ const Experience = () => {
              height: '200px',
            }}></div>
             <p className='p-2 text-center text-white font-bold '>TAILWIND CSS</p>
-          </div>
+          </motion.div>
 
 
         
-        </div>
+        </motion.div>
 
       
 

@@ -12,12 +12,12 @@ import ContactMe from "./Components/ContactMe";
 function App() {
   return (
     <div>
-      <NavBar />
-      <Home />
-      <About />
-      <Portfolio />
-      <Experience />
-      <ContactMe/>
+      <section><NavBar /></section>
+      <section><Home /></section>
+      <section><About /></section>
+      <section><Portfolio /></section>
+      <section><Experience /></section>
+      <section><ContactMe/></section>
       
    
       <SocialLinks/>

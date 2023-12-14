@@ -10,9 +10,21 @@
 @layer base{
   html{
     font-family: 'Raleway', sans-serif;
+    
     background: url(assets/bgh.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
   }
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+section{
+  scroll-snap-align:center
 }
